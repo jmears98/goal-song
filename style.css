@@ -38,13 +38,15 @@ audio {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-device-pixel-ratio: 3) { 
-   
-    h1 {
-        font-size: 20px;
-    }
-    body {
-        font-size: 16px; 
-    }
-   
+
+
+h1 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 16px;
+}
 }
 
