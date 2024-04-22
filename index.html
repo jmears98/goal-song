@@ -38,8 +38,25 @@
     <h2>Play the fucking song</h2>
     <button id="playButton">BINGO</button>
 
+
     <audio id="audioPlayer" src="audio/Goal-Song.mp3"
         preload="auto"></audio>
+
+
+    <!-- <script>
+
+        document.getElementById("playButton").addEventListener("click", function() {
+            console.log("BINGO!")
+            var audioPlayer = document.getElementById("audioPlayer");
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                document.getElementById("playButton").innerText = "PAUSE";
+            } else {
+                audioPlayer.pause();
+                audioPlayer.currentTime = 0; // Reset the audio to the beginning
+                document.getElementById("playButton").innerText = "BINGO";
+            }
+        }); </script> -->
 
     <script src="public.js"></script>
 
