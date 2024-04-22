@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Song</title>
     <link rel="icon" href="./favicon/apple-touch-icon.png" type="image/x-icon" />
-    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,16 +32,19 @@
         }
     </style>
 </head>
+
 <body>
     <h1>AXHL Washington Captials</h1>
     <h2>Play the fucking song</h2>
     <button id="playButton">BINGO</button>
 
-    <audio id="audioPlayer" src="https://www.dropbox.com/scl/fi/69plc290a0snw8f9aka37/Goal-Song-copy.mp3?dl=1" preload="auto"></audio>
+    <audio id="audioPlayer" src="https://www.dropbox.com/scl/fi/69plc290a0snw8f9aka37/Goal-Song-copy.mp3?dl=1"
+        preload="auto"></audio>
 
     <script>
+
         document.getElementById("playButton").addEventListener("click", function() {
-            console.log("BINGO")
+            console.log("BINGO!")
             var audioPlayer = document.getElementById("audioPlayer");
             if (audioPlayer.paused) {
                 audioPlayer.play();
@@ -51,7 +55,12 @@
                 document.getElementById("playButton").innerText = "BINGO";
             }
         });
+        // Reload the page when the audio finishes playing
+        var audioPlayer = document.getElementById("audioPlayer");
+        audioPlayer.addEventListener("ended", function () {
+            location.reload();
+        });
     </script>
 </body>
-</html>
 
+</html>
