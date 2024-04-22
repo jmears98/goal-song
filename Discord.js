@@ -16,7 +16,7 @@ client.on('messageCreate', async (message) => {
         });
 
         const player = createAudioPlayer();
-        const resource = createAudioResource('https://drive.google.com/file/d/1zifukpRW7BiB30EAfskpBH9MpD9qXUla/view?usp=sharing');
+        const resource = createAudioResource('https://www.dropbox.com/scl/fi/69plc290a0snw8f9aka37/Goal-Song-copy.mp3?dl=1');
         player.play(resource);
         
         connection.subscribe(player);
