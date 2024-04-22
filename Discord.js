@@ -16,7 +16,7 @@ client.on('messageCreate', async (message) => {
         });
 
         const player = createAudioPlayer();
-        const resource = createAudioResource('https://www.dropbox.com/scl/fi/69plc290a0snw8f9aka37/Goal-Song-copy.mp3?dl=1');
+        const resource = createAudioResource('audio/Goal-Song.mp3');
         player.play(resource);
         
         connection.subscribe(player);
@@ -29,4 +29,4 @@ client.on('messageCreate', async (message) => {
     }
 });
 
-client.login('YOUR_BOT_TOKEN');
+client.login('MTIzMTc3MzUzMDYzMTMxMTQwMA.GU5DMX.ZzOCke913uAl3xOnmeMOsdhue8VFotdZQj1Pc8');
